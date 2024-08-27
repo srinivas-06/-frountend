@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background:linear-gradient(red,yellow); */
+    background-color: rgb(127, 129, 255);
+
+}
+
+.container{
+    background-color: rgb(252, 145, 145);
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+input{
+    font-size: 17px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    border: none;
+}
+
+button{
+    margin-top: 25px;
+    padding: 8px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+}
+
+#result{
+    font-size: 28px;
+    margin-top: 50px;
+}

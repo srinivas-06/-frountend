@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <title>palindrom</title>
+</head>
+<body>
+    <div class="container">
+        <h1>palindrom</h1>
+        <div class="int">
+            <input type="text" placeholder="Enter the string.." id="input-val"  required>
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="answer()">Check</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function answer(){
+            let input=document.getElementById('input-val').value;
+            let len=input.length;
+            let rev=1;
+            for(let i=0;i<len/2;i++){
+                if(input[i] !== input[len-1-i]){
+                    rev--;
+                }
+            }
+
+            if (rev <= 0){
+                document.getElementById('result').innerHTML="Given srt is not palindrom";
+            }
+            else{
+                document.getElementById('result').innerHTML="Given srt is  palindrom";
+            }
+
+        }
+       
+    </script>
+
+</body>
+</html>
